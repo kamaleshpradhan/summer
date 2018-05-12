@@ -31,6 +31,7 @@ Feature: CountryApi test
     |https://restcountries.eu/rest/v2/all	|200			 |
     |http://restcountries.eu/rest/v2/all  |200       |
     |https://restcountries.eu/rest/v2/code  |404       |
+    |https://restcountries.eu/rest/v2?all=all  |404       |
     
 
   
