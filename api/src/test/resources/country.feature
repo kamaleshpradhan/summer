@@ -27,11 +27,12 @@ Feature: CountryApi test
     Then <statusCode> is returned
     
     Examples:
-    |uri																	|statusCode|
-    |https://restcountries.eu/rest/v2/all	|200			 |
-    |http://restcountries.eu/rest/v2/all  |200       |
-    |https://restcountries.eu/rest/v2/code  |404     |
-    |https://restcountries.eu/rest/v2/all/all  |404     |
+    |uri																	     |statusCode|
+    |https://restcountries.eu/rest/v2/all	     |200			  |
+    |http://restcountries.eu/rest/v2/all       |200       |
+    |https://restcountries.eu/rest/v2/code     |404       |
+    |https://restcountries.eu/rest/v2?all=all  |404       |
+    |https://restcountries.eu/rest/v2/all/all  |404       |
     
 
   
