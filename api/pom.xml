@@ -42,10 +42,28 @@
 			<version>4.12</version>
 			<scope>test</scope>
 		</dependency>
-		
-
-
 
 	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>3.0.0-M5</version>
+				<configuration>
+					<forkCount>6</forkCount>
+					<reuseForks>false</reuseForks>
+					<!--parallel>methods</parallel>
+					<threadCount>5</threadCount-->
+					<!--argLine>-Xmx1024m -XX:MaxPermSize=256m</argLine-->
+					<!--systemPropertyVariables>
+						<databaseSchema>MY_TEST_SCHEMA_${surefire.forkNumber}</databaseSchema>
+					</systemPropertyVariables>
+					<workingDirectory>FORK_DIRECTORY_${surefire.forkNumber}</workingDirectory-->
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
 
 </project>
