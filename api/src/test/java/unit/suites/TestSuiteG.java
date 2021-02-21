@@ -1,5 +1,6 @@
 package unit.suites;
 
+import home.works.api.CountryApi;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
@@ -62,6 +63,7 @@ public class TestSuiteG {
             name.add("Clever Jackal");
         }
         System.out.println("All Jackal objects created");
+        CountryApi.jvmStat();
     }
 
     @Test
